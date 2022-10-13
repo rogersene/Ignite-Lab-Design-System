@@ -1,8 +1,9 @@
-import { ReactNode } from 'react';
+import { HTMLAttributes, ReactNode } from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { clsx } from 'clsx';
+import { TextProps } from './Text';
 
-export interface HeadingProps {
+export interface HeadingProps extends HTMLAttributes<TextProps> {
     size?: 'sm' | 'md' | 'lg';
     children: ReactNode;
     asChild?: boolean;
